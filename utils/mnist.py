@@ -20,5 +20,6 @@ if __name__=="__main__":
     test_set = [r'C:\git\neural_networks\mnist\t10k-images.idx3-ubyte.data', r'C:\git\neural_networks\mnist\t10k-labels.idx1-ubyte.data']
 
     mnist = Mnist(training_set, test_set)
-    mnist.get_test_set()
-    mnist.get_training_set()
+    [test_images, test_labels] = mnist.get_test_set()
+    [training_images, training_labels] = mnist.get_training_set()
+    pass
